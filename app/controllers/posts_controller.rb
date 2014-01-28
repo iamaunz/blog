@@ -1,9 +1,12 @@
 class PostsController < ApplicationController
 
   def new
+
   end
 
-  #post GET    /posts/:id(.:format)      posts#show
+  def index
+    @posts = Post.all
+  end
 
   def create
     #@post = Post.new(params[:post])
